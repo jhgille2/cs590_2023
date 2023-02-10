@@ -1,0 +1,12 @@
+# Setup for part 1-2
+sudo chown -R $USER:mlocate /shared/conda/envs/bioinfo/
+source load_conda
+conda activate bioinfo
+conda install -c conda-forge gdown
+conda install -c bioconda sambamba
+
+# Setup for part 3
+conda create --name=py2 python=2.7
+conda activate py2
+conda install numpy
+conda install -c conda-forge gdown
