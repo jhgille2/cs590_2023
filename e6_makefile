@@ -1,0 +1,59 @@
+# Part 1-2
+# ACTIVATE BIOINFO
+data_download: 
+	gdown 18wFOo9cWuL30k2QBnQz_Ib9k3sDb2Tss
+	gdown 1bz6C8s9cT1qKpDkLUKDQNVaGSRxxwPqg
+	gdown 1fGMzJ7tmVOpH3-QpASeuLdy87eEq5hz3
+	wget http://hypervolu.me/~erik/genomes/E.coli_K12_MG1655.fa
+
+make_index: 
+	bwa index -p K12index E.coli_K12_MG1655.fa
+
+download_sra_toolkit: 
+	wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/3.0.2/sratoolkit.3.0.2-ubuntu64.tar.gz
+
+unpack_sra_toolkit: 
+	tar -xzf sratoolkit.3.0.2-ubuntu64.tar.gz
+
+add_sra_to_path: 
+	export PATH=$$HOME/sratoolkit.3.0.2-ubuntu64/bin:$$PATH
+
+download_miseq: 
+	\time fasterq-dump -p SRR10000374 SRR10000377 SRR10000380 SRR10000750
+
+compress_miseq:
+	for N in 374 377 380 750; do bgzip SRR10000$${N}_1.fastq & bgzip SRR10000$${N}_2.fastq; done
+
+align_reads: 
+	for N in 374 377 380 750; \
+	do bwa mem -t 15 -R "@RG\tID:S$${N}\tSM:S$${N}" K12index SRR10000$${N}_1.fastq.gz SRR10000$${N}_2.fastq.gz | \
+	samtools view -b - > S$${N}.raw.bam; \
+	sambamba sort S$${N}.raw.bam; \
+	sambamba markdup S$${N}.raw.sorted.bam S$${N}.bam; \
+	done
+
+call_variants: 
+	samtools faidx E.coli_K12_MG1655.fa \
+	freebayes -f E.coli_K12_MG1655.fa --ploidy 1 S374.bam  S377.bam S380.bam S750.bam > ecoli.vcf \
+	bgzip ecoli.vcf \
+	tabix -p vcf ecoli.vcf.gz
+
+variant_summaries: 
+	bcftools stats --threads 6 ecoli.vcf.gz |  grep -E "^SN|TSTV"
+
+low_qual_variant_summaries: 
+	bcftools filter --threads 6 -i'%QUAL<1' ecoli.vcf.gz | bcftools stats --threads 6 | grep -E "^SN|TSTV"
+
+high_qual_variant_summaries: 
+	bcftools filter --threads 6 -i'%QUAL>5' ecoli.vcf.gz | bcftools stats --threads 6 | grep -E "^SN|TSTV"
+
+vary_high_qual_variant_summaries: 
+	bcftools filter --threads 6 -i'%QUAL>50' ecoli.vcf.gz | bcftools stats --threads 6 | grep -E "^SN|TSTV"
+
+# Part 3 
+download_module_3:
+	gdown 1KZGdzI50VadXdbnhC3BznAuek3eiXEJx
+
+# CREATE/ACTIVATE py2 ENV NOW
+download_pt_3_script: 
+	wget http://152.7.176.221/bit815/ResequencingAlignmentStructuralVariation/module3.sh
