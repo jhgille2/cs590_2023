@@ -38,8 +38,11 @@ samtools view -h CML52.bam | ./lumpy-sv/scripts/extractSplitReads_BwaMem -i stdi
 # Summarise fragment lengths
 samtools view CML52.bam | tail -n+100000 | ./lumpy-sv/scripts/pairend_distro.py -r 101 -X 4 -N 10000 -o sample.histo
 
-# RUn lumpy
+# Run lumpy
 lumpy -mw 4 -tt 0 -pe id:sample,bam_file:CML52.discordants.bam,histo_file:sample.histo,mean:496.6609033931273,stdev:54.63947689305526,read_length:150,min_non_overlap:150,discordant_z:5,back_distance:20,weight:1,min_mapping_threshold:20 -sr id:sample,bam_file:CML52.splitters.bam,back_distance:20,weight:1,min_mapping_threshold:20 > sample.vcf
+
+# Check if lumpy found the inversion
+vcftools --vcf sample.vcf --out sample.filtered --chr chr5 --from-bp 5000000 --to-bp 10000000 --recode --recode-INFO-all
 
 # Get alignment image
 gdown 1rdSi3iOlzwjVFzthpw7bJK1Nwtgbb2wa
