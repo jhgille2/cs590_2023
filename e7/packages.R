@@ -16,4 +16,9 @@ pacman::p_load(conflicted,
                tools, 
                magrittr, 
                cowplot, 
-               patchwork)
+               patchwork, 
+               vcfR, 
+               ape, 
+               ASMap,
+               qtl, 
+               onemap)
