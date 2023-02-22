@@ -24,7 +24,7 @@ cd ./masurca_assembly
 
 # # Download the config file for this exercize from my github
 # # (I already edited the required fields)
-wget https://raw.githubusercontent.com/jhgille2/cs590_2023/main/exercize_5_masurca_config.txt
+wget https://raw.githubusercontent.com/jhgille2/cs590_2023/main/e5/exercize_5_masurca_config.txt
 
 # Get the assemble.sh script
 /usr/local/MaSuRCA-4.0.1/bin/masurca exercize_5_masurca_config.txt
@@ -63,7 +63,7 @@ mkdir masurca_assembly_paired
 cd ./masurca_assembly_paired
 
 # Download a config file that I already prepared
-wget https://raw.githubusercontent.com/jhgille2/cs590_2023/main/exercize_5_masurca_pairedend_config.txt
+wget https://raw.githubusercontent.com/jhgille2/cs590_2023/main/e5/exercize_5_masurca_pairedend_config.txt
 
 # Get the assemble.sh script
 /usr/local/MaSuRCA-4.0.1/bin/masurca exercize_5_masurca_pairedend_config.txt
