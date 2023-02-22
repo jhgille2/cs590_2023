@@ -1,5 +1,5 @@
 # Exercise 7
-Code for exercise 7. Run 
+Code for exercise 7. Run  
   source("./packages.R")
   tar_make()
 
