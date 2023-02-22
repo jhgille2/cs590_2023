@@ -1,7 +1,7 @@
 # Exercise 7
-Code for exercise 7. Run:  
+Code for exercise 7. 
   
   source("./packages.R")  
   tar_make()
 
-to run the code in the \_targets.R script. 
+
