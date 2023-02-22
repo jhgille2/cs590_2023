@@ -14,7 +14,8 @@ make_summary_plots <- function(plot_ready_data) {
     theme(legend.title = element_blank()) + 
     xlab("Frequency") + 
     ylab("Count") + 
-    theme(axis.text = element_text(size = 12))
+    theme(axis.text = element_text(size = 12)) + 
+    coord_cartesian(xlim = c(0, 1))
 
   # Make a faceted plot for the other summary data
   other_stats_plots <- ggplot(plot_ready_data$no_allele_freq, aes(x = value)) + 
@@ -30,9 +31,9 @@ make_summary_plots <- function(plot_ready_data) {
   both_plots <- allele_freq_plot + other_stats_plots
   
   # Return all the plots in a list
-  res <- list("allele_freq" = allele_freq_plot, 
+  res <- list("allele_freq"     = allele_freq_plot, 
               "faceted_summary" = other_stats_plots, 
-              "all_plots" = both_plots)
+              "all_plots"       = both_plots)
   
   return(res)
 }

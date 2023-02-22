@@ -4,12 +4,12 @@
 #'
 #' @title
 #' @param output_files
-read_output_data <- function(output_files) {
+read_output_data <- function(file_paths) {
   
   # FUnction to read in the allele frequency file 
   read_allele_freq <- function(allele_freq_file){
     
-    freq_df <- read_delim(output_files[[1]], 
+    freq_df <- read_delim(allele_freq_file, 
                           col_names = FALSE, 
                           skip = 1, delim = "\t")
     
@@ -38,18 +38,20 @@ read_output_data <- function(output_files) {
 
   read_fn <- function(file){
     
-    if(file_path_sans_ext(basename(file)) == "allele_freq"){
+    if(file_path_sans_ext(basename(file)) %in% c("allele_freq", "allele_freq_filtered")){
       res <- read_allele_freq(file)
     }else{
-      res <- read_delim(file)
+      res <- read_delim(file, delim = "\t")
     }
     
     return(res)
     
   }
   
-  all_dfs <- purrr::map(output_files, read_fn) %>% 
-    set_names(file_path_sans_ext(basename(output_files)))
+  all_dfs <- purrr::map(file_paths, read_fn) %>% 
+    set_names(file_path_sans_ext(basename(file_paths)))
+  
+  names(all_dfs) <- str_remove(names(all_dfs), "_filtered")
   
   return(all_dfs)
 }
