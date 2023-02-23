@@ -70,7 +70,7 @@ tar_plan(
   ## Section: Plots
   ##################################################
   
-  # Sumamry plots of non-filtered data
+  # Summary plots of non-filtered data
   tar_target(summary_plots, 
              make_summary_plots(plot_ready_data)),
   
