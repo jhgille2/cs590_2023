@@ -14,8 +14,7 @@ make_summary_plots <- function(plot_ready_data) {
     theme(legend.title = element_blank()) + 
     xlab("Frequency") + 
     ylab("Count") + 
-    theme(axis.text = element_text(size = 12)) + 
-    coord_cartesian(xlim = c(0, 1))
+    coord_cartesian(xlim = c(0, 1), ylim = c(0, 1750))
 
   # Make a faceted plot for the other summary data
   other_stats_plots <- ggplot(plot_ready_data$no_allele_freq, aes(x = value)) + 
@@ -23,9 +22,7 @@ make_summary_plots <- function(plot_ready_data) {
     facet_wrap(~df_name, scales = "free", ncol = 1) + 
     theme_calc() + 
     xlab("Value") + 
-    ylab("Count") + 
-    theme(strip.text = element_text(face = "bold", size = 12), 
-          axis.text = element_text(size = 12))
+    ylab("Count")
   
   # Combine the two plots with patchwork
   both_plots <- allele_freq_plot + other_stats_plots
