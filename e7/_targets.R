@@ -67,16 +67,23 @@ tar_plan(
              prep_plot_data(filtered_output_data)),
   
   
-  # Make plots
+  ## Section: Plots
+  ##################################################
+  
+  # Sumamry plots of non-filtered data
   tar_target(summary_plots, 
              make_summary_plots(plot_ready_data)),
   
+  # SUmmary plots of filtered data
   tar_target(filtered_summary_plots, 
              make_summary_plots(plot_ready_filtered)),
   
+  # Comparison of just the allele frequencies
+  # between filtered and non-filtered data
   tar_target(filter_comparison, 
              compare_output_data(output_data, filtered_output_data)),
   
+  # Comparison of all the data between filtered and non-filtered data
   tar_target(all_plots_comparison, 
              compare_all_plots(summary_plots, filtered_summary_plots)),
   
