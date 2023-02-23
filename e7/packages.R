@@ -21,4 +21,5 @@ pacman::p_load(conflicted,
                ape, 
                ASMap,
                qtl, 
-               onemap)
+               onemap, 
+               renv)
