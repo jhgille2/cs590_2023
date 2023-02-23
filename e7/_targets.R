@@ -12,23 +12,17 @@ tar_plan(
   ##################################################
   
   # Files output from exercize 7
-  tar_target(output_files, 
-             list.files(here("data", "non_filtered", "summary_files"), full.names = TRUE), 
-             format = "file"), 
+  tar_file(output_files, 
+             list.files(here("data", "non_filtered", "summary_files"), full.names = TRUE)), 
   
   # Summary files for filtered vcf
-  tar_target(filtered_output_files, 
-             list.files(here("data", "filtered"), full.names = TRUE), 
-             format = "file"),
+  tar_file(filtered_output_files, 
+             list.files(here("data", "filtered"), full.names = TRUE)),
   
   # The output variant call file
   tar_file(vcf_file, 
            here("data", "non_filtered", "out.vcf")), 
-  
-  # LG2 sequence file
-  tar_file(sequence_file, 
-           here("data", "non_filtered", "LG2.fa")),
-  
+
   
   ## Section: Read in data
   ##################################################
