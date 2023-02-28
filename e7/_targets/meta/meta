@@ -8,6 +8,8 @@ filtered_output_data|stem|81bc25a8fe198ad2|c0c974e910626d8a|0eadcf046c3d4301|-61
 filtered_output_files|stem|e34ea889ad136d16|c926201cd35adff1|c793b87d5821f57c|1404081114|C:/Users/jhgille2/Documents/R/projects/cs590_2023/e7/data/filtered/allele_freq_filtered.frq*C:/Users/jhgille2/Documents/R/projects/cs590_2023/e7/data/filtered/depth_individual_filtered.idepth*C:/Users/jhgille2/Documents/R/projects/cs590_2023/e7/data/filtered/depth_site_filtered.ldepth*C:/Users/jhgille2/Documents/R/projects/cs590_2023/e7/data/filtered/missing_individual_filtered.imiss*C:/Users/jhgille2/Documents/R/projects/cs590_2023/e7/data/filtered/missing_site_filtered.lmiss*C:/Users/jhgille2/Documents/R/projects/cs590_2023/e7/data/filtered/quality_site_filtered.lqual|t19410.9068356185s|397532ce75e3be21|64227|file|local|vector|||0||
 filtered_summary_plots|stem|dc563eb5b9be757e|9b9c6bf4914cb098|4eb9466e63d9be46|-989323816||t19411.6269572783s|d0e8c656a88950ac|140667|rds|local|vector|||0.08||
 get_nondist_markers|function|3bb0e06957637763|||||||||||||||
+linkage_map|stem||7086ba2e92c4c6a8|31bcfc684a094669|715523200||t19412.279640977s||0|rds|local|vector|||37670.18||object marker_mark not found
+make_linkage_map|function|2a512daffa3d1b2d|||||||||||||||
 make_summary_plots|function|f71495d53b1fd2fb|||||||||||||||
 nondist_vcf|stem|48790b7994f67e13|2703a324d43781e9|42a5979b608d2cb2|967598281||t19411.6269630328s|667fc748fd60c2d6|416555|rds|local|vector|||0.17||
 nonseg_marks|stem|7be39a65e7b9a4b2|80d47d3db9fe0885|130c9bfa960cd772|253443389||t19411.6269548953s|3bf970ae35c67eaf|2413|rds|local|vector|||0.35||

@@ -6,12 +6,18 @@ allele_freqs <- output_data$allele_freq %>%
   mutate(marker_name = paste(CHROM, POS, sep = "_")) %>% 
   select(marker_name, ALLELE_1_FREQ, ALLELE_2_FREQ, ALLELE_3_FREQ)
 
+marker_quality <- output_data %>% 
+  pluck("quality_site") %>% 
+  mutate(marker_name = paste(CHROM, POS, sep = "_")) %>% 
+  select(marker_name, QUAL)
+
 
 # Get parental genotypes
 parent_genos <- vcf_gt[, c("female", "male")] %>% 
   as.data.frame() %>% 
   rownames_to_column(var = "marker_name") %>% 
   left_join(allele_freqs, by = "marker_name") %>% 
+  left_join(marker_quality, by = "marker_name") %>% 
   mutate(ALLELE_1_FREQ = as.numeric(ALLELE_1_FREQ), 
          ALLELE_2_FREQ = as.numeric(ALLELE_2_FREQ), 
          ALLELE_3_FREQ = as.numeric(ALLELE_3_FREQ), 

@@ -1,0 +1,12 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+allele_freq_data|stem|e016a151b6bfb5ae|3f83bfcd1682302d|7a6d1e2e70399b96|124050071||t19416.6764711326s|30a424e9f7d9559e|17588|rds|local|vector|||1.53|One or more parsing issues, see problems for details. Expected 2 pieces. Additional pieces discarded in 9 rows 100, 281, 283, 737, 1245, 1321, 1651, 1867, 2132.. Expected 2 pieces. Missing pieces filled with NA in 2123 rows 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, ..... Expected 2 pieces. Missing pieces filled with NA in 113 rows 5, 7, 38, 43, 47, 68, 95, 100, 105, 131, 133, 162, 175, 201, 224, 240, 243, 247, 255, 281, ....|
+allele_freq_file|stem|a0042c3d67c4f0a3|1c678625332024fd|4e3739ef91745af0|-1986634125|C:/Users/jhgille2/Documents/R/projects/cs590_2023/e8/data/SNP_Counts.frq.count|t19415.7260069444s|856462a31f32b6bf|75041|file|local|vector|||0.01||
+gene_model_file|stem|652c7fcd27f92ebf|544f02159ae4972a|4e3739ef91745af0|817428778|C:/Users/jhgille2/Documents/R/projects/cs590_2023/e8/data/Araport11_cds_20220914_representative_gene_model|t19415.7984837963s|63c2e27ebe113432|37238428|file|local|vector|||0||
+maf_data|stem|3313b846af1dec7a|9f621cc86b197ad4|76f5f2c447bc3c78|-1521342170||t19416.6802202812s|05315122755c7ca0|25810|rds|local|vector|||0.03||
+make_maf_df|function|4ecd9fbb46f49a52|||||||||||||||
+make_seq_names_matrix|function|6b5e2fce91ccae25|||||||||||||||
+read_allele_freq|function|3a3d7689619c3c65|||||||||||||||
+seq_data|stem|602d14765308fdfe|d305b63f3a1f7983|a0fba321d405c685|124935131||t19416.6822143315s|7d19236776d945a5|10901656|rds|local|vector|||0.64||
+seq_names_matrix|stem|bd1d4e668a3ab522|67cb2e01e06b415e|92d790b4feef18fb|-1671046120||t19416.6873203824s|578fea33dc8fa446|812763|rds|local|vector|||34.47||
+snp_quality_data|stem|1df00326b3731528|705c6cc7ba8f375e|65b33c96a9ae1f63|1855299710||t19416.676472539s|06b1f7490ea82ed1|23037|rds|local|vector|||0.11||
+snp_quality_file|stem|a1f2f453a0ebc0ef|f7d6d60952f1ce07|4e3739ef91745af0|311872147|C:/Users/jhgille2/Documents/R/projects/cs590_2023/e8/data/SNP_Qual.lqual|t19415.7266666667s|cb295321c936b06e|61878|file|local|vector|||0||

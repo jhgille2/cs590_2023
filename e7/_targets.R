@@ -66,6 +66,9 @@ tar_plan(
   tar_target(plot_ready_filtered, 
              prep_plot_data(filtered_output_data)),
   
+  tar_target(linkage_map, 
+             make_linkage_map(onemap_vcf)),
+  
   
   ## Section: Plots
   ##################################################
@@ -74,7 +77,7 @@ tar_plan(
   tar_target(summary_plots, 
              make_summary_plots(plot_ready_data)),
   
-  # SUmmary plots of filtered data
+  # Summary plots of filtered data
   tar_target(filtered_summary_plots, 
              make_summary_plots(plot_ready_filtered)),
   
