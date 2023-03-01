@@ -8,7 +8,6 @@ pacman::p_load(conflicted,
                dotenv, 
                targets, 
                tarchetypes, 
-               tidyverse, 
                here, 
                magrittr, 
                readr, 
@@ -16,4 +15,10 @@ pacman::p_load(conflicted,
                googledrive, 
                Biostrings, 
                animation, 
-               purrr)
+               purrr, 
+               ggplot2, 
+               gganimate, 
+               ggthemes)
+
+
+pacman::p_load_gh("milesmcbain/fnmate")

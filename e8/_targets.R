@@ -25,6 +25,11 @@ tar_plan(
              here("data", "Araport11_cds_20220914_representative_gene_model"), 
              format = "file"),
   
+  # World ag data
+  tar_target(agdata_file, 
+             here("data", "WorldAgData.csv"), 
+             format = "file"),
+  
   ## Section: Read in data
   ##################################################
   
@@ -41,6 +46,10 @@ tar_plan(
   tar_target(seq_data, 
              readDNAStringSet(gene_model_file)),
   
+  # World ag data
+  tar_target(agData, 
+             read_csv(agdata_file)),
+  
   ## Section: Data wrangling
   ##################################################
   
@@ -50,6 +59,10 @@ tar_plan(
   
   # Matrix of seq names
   tar_target(seq_names_matrix, 
-             make_seq_names_matrix(seq_data))
+             make_seq_names_matrix(seq_data)), 
+  
+  # Make a plot of the agData data
+  tar_target(agData_plot, 
+             make_agData_plot(agData))
 
 )
