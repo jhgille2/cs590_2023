@@ -14,4 +14,5 @@ pacman::p_load(conflicted,
                tools,
                tximport,
                DESeq2,
-               htmltools)
+               htmltools, 
+               tibble)

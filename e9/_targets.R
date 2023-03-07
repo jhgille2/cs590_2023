@@ -40,7 +40,26 @@ tar_target(tx2gene,
 tar_target(txi,
             tximport(results_paths,
                      type = "salmon",
-                     tx2gene = tx2gene))
+                     tx2gene = tx2gene)), 
+
+# Sample info data frame
+tar_target(sample_info,
+           make_sample_table()), 
+
+# Test for differentially expressed genes
+tar_target(dds,
+           DESeqDataSetFromTximport(txi = txi,
+                                    colData = sample_info,
+                                    design = formula("~condition")) %>%
+            DESeq()),
+
+# Extract results from the tests
+tar_target(res,
+            results(dds)),
+
+# Make a volcano plot of the results
+tar_target(volcano_plot, 
+            make_volcano_plot(res))
 
 
 )
