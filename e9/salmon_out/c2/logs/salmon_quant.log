@@ -1,0 +1,39 @@
+[2023-03-07 11:15:40.510] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2023-03-07 11:15:40.510] [jointLog] [info] numQuantThreads = 4
+[2023-03-07 11:15:42.123] [fileLog] [info] quantification processed 0 fragments so far
+
+[2023-03-07 11:15:41.914] [jointLog] [info] replaced 698 non-ACGT nucleotides with random nucleotides
+[2023-03-07 11:15:42.564] [fileLog] [info] quantification processed 1000000 fragments so far
+
+[2023-03-07 11:15:43.085] [fileLog] [info] quantification processed 2000000 fragments so far
+
+[2023-03-07 11:15:43.169] [jointLog] [info] 
+
+The alignment group queue pool has been exhausted.  284 extra fragments were allocated on the heap to saturate the pool.  No new fragments will be allocated
+
+
+[2023-03-07 11:15:46.125] [fileLog] [info] quantification processed 3000000 fragments so far
+
+[2023-03-07 11:15:49.548] [fileLog] [info] quantification processed 3952323 fragments so far
+
+[2023-03-07 11:15:54.618] [jointLog] [info] 
+
+
+Completed first pass through the alignment file.
+Total # of mapped reads : 3952323
+# of uniquely mapped reads : 3952308
+# ambiguously mapped reads : 15
+
+
+
+[2023-03-07 11:15:54.649] [jointLog] [info] Computed 32,280 rich equivalence classes for further processing
+[2023-03-07 11:15:54.649] [jointLog] [info] Counted 3,952,323 total reads in the equivalence classes 
+[2023-03-07 11:15:54.656] [jointLog] [warning] Only 3952323 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2023-03-07 11:15:54.657] [jointLog] [info] starting optimizer
+[2023-03-07 11:15:54.668] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2023-03-07 11:15:54.670] [jointLog] [info] iteration = 0 | max rel diff. = 694.026
+[2023-03-07 11:15:54.815] [jointLog] [info] iteration = 100 | max rel diff. = 0
+[2023-03-07 11:15:54.816] [jointLog] [info] finished optimizer
+[2023-03-07 11:15:54.816] [jointLog] [info] writing output

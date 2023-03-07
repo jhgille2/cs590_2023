@@ -1,0 +1,8 @@
+{
+    "salmon_version": "1.1.0",
+    "targets": "./At_disease_RNAseq/TAIR10.cDNA.fa.gz",
+    "libType": "U",
+    "alignments": "./At_disease_RNAseq/t3.bam",
+    "output": "./salmon_out/t3",
+    "auxDir": "aux_info"
+}

@@ -1,0 +1,41 @@
+[2023-03-07 11:16:17.241] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2023-03-07 11:16:17.241] [jointLog] [info] numQuantThreads = 4
+[2023-03-07 11:16:18.668] [jointLog] [info] replaced 698 non-ACGT nucleotides with random nucleotides
+[2023-03-07 11:16:18.933] [fileLog] [info] quantification processed 0 fragments so far
+
+[2023-03-07 11:16:19.234] [fileLog] [info] quantification processed 1000000 fragments so far
+
+[2023-03-07 11:16:19.996] [fileLog] [info] quantification processed 2000000 fragments so far
+
+[2023-03-07 11:16:20.167] [jointLog] [info] 
+
+The alignment group queue pool has been exhausted.  2941 extra fragments were allocated on the heap to saturate the pool.  No new fragments will be allocated
+
+
+[2023-03-07 11:16:22.449] [fileLog] [info] quantification processed 3000000 fragments so far
+
+[2023-03-07 11:16:26.986] [fileLog] [info] quantification processed 4000000 fragments so far
+
+[2023-03-07 11:16:28.827] [fileLog] [info] quantification processed 4412585 fragments so far
+
+[2023-03-07 11:16:34.539] [jointLog] [info] 
+
+
+Completed first pass through the alignment file.
+Total # of mapped reads : 4412585
+# of uniquely mapped reads : 4412572
+# ambiguously mapped reads : 13
+
+
+
+[2023-03-07 11:16:34.568] [jointLog] [info] Computed 29,844 rich equivalence classes for further processing
+[2023-03-07 11:16:34.568] [jointLog] [info] Counted 4,412,585 total reads in the equivalence classes 
+[2023-03-07 11:16:34.578] [jointLog] [warning] Only 4412585 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2023-03-07 11:16:34.579] [jointLog] [info] starting optimizer
+[2023-03-07 11:16:34.592] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2023-03-07 11:16:34.594] [jointLog] [info] iteration = 0 | max rel diff. = 410.582
+[2023-03-07 11:16:34.739] [jointLog] [info] iteration = 100 | max rel diff. = 4.11909e-16
+[2023-03-07 11:16:34.740] [jointLog] [info] finished optimizer
+[2023-03-07 11:16:34.740] [jointLog] [info] writing output

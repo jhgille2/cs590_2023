@@ -1,0 +1,46 @@
+{
+    "salmon_version": "1.1.0",
+    "samp_type": "none",
+    "opt_type": "vb",
+    "quant_errors": [],
+    "num_libraries": 1,
+    "library_types": [
+        "U"
+    ],
+    "frag_dist_length": 1001,
+    "seq_bias_correct": false,
+    "gc_bias_correct": false,
+    "num_bias_bins": 4096,
+    "mapping_type": "alignment",
+    "num_valid_targets": 41671,
+    "num_decoy_targets": 0,
+    "num_eq_classes": 29932,
+    "serialized_eq_classes": false,
+    "eq_class_properties": [
+        "range_factorized"
+    ],
+    "length_classes": [
+        722,
+        1158,
+        1566,
+        2155,
+        16347
+    ],
+    "index_seq_hash": "",
+    "index_name_hash": "",
+    "index_seq_hash512": "",
+    "index_name_hash512": "",
+    "index_decoy_seq_hash": "",
+    "index_decoy_name_hash": "",
+    "num_bootstraps": 0,
+    "num_processed": 10613587,
+    "num_mapped": 7388360,
+    "num_decoy_fragments": 0,
+    "num_dovetail_fragments": 0,
+    "num_fragments_filtered_vm": 0,
+    "num_alignments_below_threshold_for_mapped_fragments_vm": 0,
+    "percent_mapped": 69.61228093763211,
+    "call": "quant",
+    "start_time": "Tue Mar  7 11:15:56 2023",
+    "end_time": "Tue Mar  7 11:16:15 2023"
+}
