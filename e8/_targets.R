@@ -57,12 +57,28 @@ tar_plan(
   tar_target(maf_data, 
              make_maf_df(allele_freq_data, snp_quality_data)), 
   
+  # MAF plot
+  tar_target(maf_plot, 
+             make_maf_plot(maf_data)),
+  
   # Matrix of seq names
   tar_target(seq_names_matrix, 
              make_seq_names_matrix(seq_data)), 
   
+  
+  # Get just the genes that are encoded in the 
+  # chloroplast genome
+  tar_target(chloroIndices, 
+             get_chloroIndices(seq_data, seq_names_matrix)),
+  
+  # Write the chloroplast genes to a new fasta file
+  tar_target(chloro_fasta_export, 
+             export_chloro_genes(chloroIndices), 
+             format = "file"),
+  
   # Make a plot of the agData data
   tar_target(agData_plot, 
-             make_agData_plot(agData))
+             make_agData_plot(agData), 
+             format = "file")
 
 )

@@ -17,7 +17,7 @@ cols <- colpal(29)
 
 agData_plot <- ggplot(agData, aes(x = value_tonnes, y = value_1000_ha, col = Area, size = Value/100000, label = Area)) + 
   lims(x = c(0,450000000), y = c(0,200000)) + 
-  scale_size(range = c(2, 12)) + 
+  scale_size(range = c(2, 20)) + 
   theme_gdocs() + 
   geom_point(pch = 20) + 
   scale_color_manual(values = cols) + 
