@@ -13,18 +13,18 @@ tar_target(download_RNAseq,
            format = "file"),
 
 # Get just the bam files
-tar_target(bam_files,
-            get_bam_files(download_RNAseq),
-            format = "file"),
+tar_files(bam_files,
+         get_bam_files(download_RNAseq)),
 
 # The transcript file
 tar_target(transcript_file,
             get_transcript_file(download_RNAseq),
             format = "file"),
 
-# RUn salmon for each bam file, output to salmon_out directory
+# Run salmon for each bam file, output to salmon_out directory
 tar_target(salmon_output,
             run_salmon(transcript_file, bam_files),
+            pattern = map(bam_files),
             format = "file"),
 
 # Get all "quant.sf" files that were output by salmon
@@ -40,11 +40,11 @@ tar_target(tx2gene,
 tar_target(txi,
             tximport(results_paths,
                      type = "salmon",
-                     tx2gene = tx2gene)), 
+                     tx2gene = tx2gene)),
 
 # Sample info data frame
 tar_target(sample_info,
-           make_sample_table()), 
+           make_sample_table()),
 
 # Test for differentially expressed genes
 tar_target(dds,
@@ -58,8 +58,12 @@ tar_target(res,
             results(dds)),
 
 # Make a volcano plot of the results
-tar_target(volcano_plot, 
-            make_volcano_plot(res))
+tar_target(volcano_plot,
+            make_volcano_plot(res)),
+
+# Summary info for the exercize
+tar_target(summary_info,
+            make_summary_info(res))
 
 
 )

@@ -14,7 +14,7 @@
     "mapping_type": "alignment",
     "num_valid_targets": 41671,
     "num_decoy_targets": 0,
-    "num_eq_classes": 26587,
+    "num_eq_classes": 26589,
     "serialized_eq_classes": false,
     "eq_class_properties": [
         "range_factorized"
@@ -41,6 +41,6 @@
     "num_alignments_below_threshold_for_mapped_fragments_vm": 0,
     "percent_mapped": 72.96266623530296,
     "call": "quant",
-    "start_time": "Tue Mar  7 11:15:22 2023",
-    "end_time": "Tue Mar  7 11:15:39 2023"
+    "start_time": "Tue Mar  7 13:42:46 2023",
+    "end_time": "Tue Mar  7 13:42:59 2023"
 }
