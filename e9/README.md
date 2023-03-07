@@ -16,7 +16,7 @@ conda install -c bioconda -c conda-forge gdown salmon=1.10
 
 And then run this.  
 ```r
-# Activate the renv project
+# Restore project state from lockfile
 renv::restore()
 
 # Load packages
