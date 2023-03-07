@@ -1,22 +1,22 @@
-[2023-03-07 13:43:00.896] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
-[2023-03-07 13:43:00.896] [jointLog] [info] numQuantThreads = 4
-[2023-03-07 13:43:02.387] [fileLog] [info] quantification processed 0 fragments so far
+[2023-03-07 15:05:46.552] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2023-03-07 15:05:46.552] [jointLog] [info] numQuantThreads = 4
+[2023-03-07 15:05:48.143] [fileLog] [info] quantification processed 0 fragments so far
 
-[2023-03-07 13:43:02.174] [jointLog] [info] replaced 698 non-ACGT nucleotides with random nucleotides
-[2023-03-07 13:43:02.643] [fileLog] [info] quantification processed 1000000 fragments so far
+[2023-03-07 15:05:47.897] [jointLog] [info] replaced 698 non-ACGT nucleotides with random nucleotides
+[2023-03-07 15:05:48.406] [fileLog] [info] quantification processed 1000000 fragments so far
 
-[2023-03-07 13:43:03.261] [jointLog] [info] 
+[2023-03-07 15:05:48.827] [fileLog] [info] quantification processed 2000000 fragments so far
+
+[2023-03-07 15:05:49.009] [jointLog] [info] 
 
 The alignment group queue pool has been exhausted.  5214 extra fragments were allocated on the heap to saturate the pool.  No new fragments will be allocated
 
 
-[2023-03-07 13:43:03.061] [fileLog] [info] quantification processed 2000000 fragments so far
+[2023-03-07 15:05:50.604] [fileLog] [info] quantification processed 3000000 fragments so far
 
-[2023-03-07 13:43:04.922] [fileLog] [info] quantification processed 3000000 fragments so far
+[2023-03-07 15:05:53.158] [fileLog] [info] quantification processed 3952323 fragments so far
 
-[2023-03-07 13:43:07.598] [fileLog] [info] quantification processed 3952323 fragments so far
-
-[2023-03-07 13:43:13.065] [jointLog] [info] 
+[2023-03-07 15:05:58.111] [jointLog] [info] 
 
 
 Completed first pass through the alignment file.
@@ -26,14 +26,14 @@ Total # of mapped reads : 3952323
 
 
 
-[2023-03-07 13:43:13.091] [jointLog] [info] Computed 32,281 rich equivalence classes for further processing
-[2023-03-07 13:43:13.091] [jointLog] [info] Counted 3,952,323 total reads in the equivalence classes 
-[2023-03-07 13:43:13.096] [jointLog] [warning] Only 3952323 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+[2023-03-07 15:05:58.145] [jointLog] [info] Computed 32,280 rich equivalence classes for further processing
+[2023-03-07 15:05:58.145] [jointLog] [info] Counted 3,952,323 total reads in the equivalence classes 
+[2023-03-07 15:05:58.151] [jointLog] [warning] Only 3952323 fragments were mapped, but the number of burn-in fragments was set to 5000000.
 The effective lengths have been computed using the observed mappings.
 
-[2023-03-07 13:43:13.097] [jointLog] [info] starting optimizer
-[2023-03-07 13:43:13.111] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
-[2023-03-07 13:43:13.113] [jointLog] [info] iteration = 0 | max rel diff. = 693.986
-[2023-03-07 13:43:13.277] [jointLog] [info] iteration = 100 | max rel diff. = 3.79648e-16
-[2023-03-07 13:43:13.277] [jointLog] [info] finished optimizer
-[2023-03-07 13:43:13.277] [jointLog] [info] writing output
+[2023-03-07 15:05:58.152] [jointLog] [info] starting optimizer
+[2023-03-07 15:05:58.168] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2023-03-07 15:05:58.170] [jointLog] [info] iteration = 0 | max rel diff. = 694.019
+[2023-03-07 15:05:58.324] [jointLog] [info] iteration = 100 | max rel diff. = 0
+[2023-03-07 15:05:58.325] [jointLog] [info] finished optimizer
+[2023-03-07 15:05:58.325] [jointLog] [info] writing output

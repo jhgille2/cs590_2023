@@ -8,18 +8,16 @@ lapply(list.files("./R", full.names = TRUE), source)
 tar_plan(
 
 # Download the RNAseq data
-tar_target(download_RNAseq,
-           download_data(),
-           format = "file"),
+tar_files(download_RNAseq,
+           download_data()),
 
 # Get just the bam files
 tar_files(bam_files,
          get_bam_files(download_RNAseq)),
 
 # The transcript file
-tar_target(transcript_file,
-            get_transcript_file(download_RNAseq),
-            format = "file"),
+tar_files(transcript_file,
+            get_transcript_file(download_RNAseq)),
 
 # Run salmon for each bam file, output to salmon_out directory
 tar_target(salmon_output,

@@ -3,16 +3,24 @@ if(!require(pacman)){
   install.packages("pacman")
 }
 
-# Use pacman to load/install packaged
+# Use pacman to load/install packages
+
+# Workflow management
 pacman::p_load(conflicted,
                dotenv,
                targets,
                tarchetypes,
-               dplyr,
+               here)
+
+# Data wrangling
+pacman::p_load(dplyr,
                purrr,
-               here,
+               magrittr,
                tools,
-               tximport,
-               DESeq2,
-               htmltools, 
-               tibble)
+               tibble,
+               htmltools)
+
+# Analysis
+pacman::p_load(tximport,
+               DESeq2)
+
