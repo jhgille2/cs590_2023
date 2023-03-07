@@ -6,9 +6,9 @@ To set up the environment, run this in the VCL.
 sudo chown -R $USER:mlocate /shared/conda/envs/bioinfo/
 source load_conda
 
-# Install mamba for faster conda environment solving
-curl micro.mamba.pm/install.sh | bash
-source .bashrc
+# Activate bioinfo and install gdown and salmon (using mamba)
+conda activate bioinfo
+conda install -c bioconda -c conda-forge gdown salmon=1.10
 ```  
 
 And then run this to run the pipeline.  
