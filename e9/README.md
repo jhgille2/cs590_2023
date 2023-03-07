@@ -14,9 +14,14 @@ conda activate bioinfo
 conda install -c bioconda -c conda-forge gdown salmon=1.10
 ```  
 
-And then run this to run the pipeline.  
+And then run this.  
 ```r
+# activate the renv workspace
 renv::activate()
+
+# Load packages
 source("./packages.R")
+
+# Run the targets pipeline
 tar_make()
 ```
