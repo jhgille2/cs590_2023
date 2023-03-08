@@ -2,7 +2,7 @@
 
 To set up the environment, run this in the VCL.  
 
-This should also work outside the VCL as long as conda and R are available and you're on linux (I've only tested on Ubuntu 20.04).  
+This should also work outside the VCL as long as conda and R are available and you're running linux (I've only tested on Ubuntu 20.04).  
 ```bash
 # Download the repository
 git clone https://github.com/jhgille2/cs590_2023.git
