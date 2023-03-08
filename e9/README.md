@@ -5,6 +5,9 @@ To set up the environment, run this in the VCL.
 # Download the repository
 git clone https://github.com/jhgille2/cs590_2023.git
 
+# Move into the e9 directory
+cd ./cs590_2023/e9
+
 # Prepare bioinfo env
 sudo chown -R $USER:mlocate /shared/conda/envs/bioinfo/
 source load_conda
