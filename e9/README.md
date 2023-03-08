@@ -15,6 +15,9 @@ source load_conda
 # Activate bioinfo and install gdown and salmon (using mamba)
 conda activate bioinfo
 conda install -c bioconda -c conda-forge gdown salmon=1.10
+
+# Open R teminal
+R
 ```  
 
 And then run this.  
