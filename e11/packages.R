@@ -6,10 +6,14 @@ pacman::p_load(targets,
 # Data wrangling
 pacman::p_load(dplyr,
                purrr,
+               tidyr,
                magrittr,
                tools,
                tibble,
-               htmltools)
-
-
-
+               htmltools,
+               readr,
+               MatrixGenerics,
+               ggplot2,
+               ggthemes,
+               stringr,
+               tidyselect)

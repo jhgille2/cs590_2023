@@ -1,0 +1,29 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+all_methylation_files|stem|0fb15d163a1e71b3|bf0b8cc73d7bb806|bb57efca779b7b04|-523189337||t19439.5956003177s|4859fc503e8e9e17|155|rds|local|vector|||0.001||
+cntsMax|stem|a8a89899b72bd81d|6b9d6e319f70452a|c62cf0968424fb6f|196154574||t19439.595574276s|08e1ace1939e09f4|623557|rds|local|vector|||0.086||
+cntsPlot|stem|116a013f2f4e6cf4|24544cf8e9993bb9|ac8b7dde19c2d3ca|-1116733309|/home/jhgille2/cs590_2023/e11/plots/log_counts_plot.png|t19439.6087492757s|cca39bb681a974af|50720|file|local|vector|||0.721|1m22mRemoved 55732 rows containing nonfinite values stat_bin.|
+epigenetic_boxplots|stem|323bc39d1fd3b3f7|60735fb63fe0e04c|f128cf48dd3ebcca|2092704799|/home/jhgille2/cs590_2023/e11/plots/boxplots.png|t19439.6176725394s|eac28cf1097ed4df|189648|file|local|vector|||1.592|1m22mRemoved 1645 rows containing nonfinite values stat_boxplot.|
+expression_scatterplot|stem|afa3341ff80eb9f1|6f270a01f7a99ef9|8c954fb4951b32a6|-1646400314|/home/jhgille2/cs590_2023/e11/plots/expression_scatterplot.png|t19439.6193698773s|36270ed643e8b4ca|102540|file|local|vector|||0.621||
+filter_annotations_file|function|c317c883ceed970a|||||||||||||||
+filtered_epigenetic_data|stem|77aec078fedc3f07|7c83181d0505e841|ad926efd4dfbd940|-1191729173||t19439.5956262436s|e16cdab99da319fc|104944|rds|local|vector|||0.158|1m22mThere was 1 warning in dplyrmutate.1m22m36mℹ39m In argument acrosseverything, as.numeric.Caused by warning33m39m NAs introduced by coercion|
+gene_annotations|stem|e0015a28740ca921|1342a31df80f0a47|ad81f93c4456d00e|1470855215|/home/jhgille2/cs590_2023/e11/ZmB73_WGS_GenesOnly.gff3|t19439.5955547158s|4a89e7094c4daac1|11850018|file|local|vector|||0.557||
+get_max_counts|function|64ffa55c55a07760|||||||||||||||
+histone_bed_file|stem|fad2820af00b66b2|4a14df62cf23f103|c3b5fc02cdc369c1|-1048620483|/home/jhgille2/cs590_2023/e11/data/Epigenetic_Data/B73_Chr1_Histone_H3K4me3.bed|t19436.1217824074s|37b67518367387f0|48551|file|local|vector|||0.002||
+histones_mapped|stem|e250a0d9593cada3|9995f8939ed06d5a|6e1b92e9f88c32aa|-1129627048|/home/jhgille2/cs590_2023/e11/B73_Mapped_Histones.tsv|t19439.5955814519s|1a05ad1c08b4166a|12072263|file|local|vector|||0.279||
+maize_annotations|stem|132ff44f3b4dc01b|9f8b0ce7bafc34ed|c3b5fc02cdc369c1|-110893147|/home/jhgille2/cs590_2023/e11/data/ZmB73_5a.59_WGS.gff3|t18332.856875s|941692b30c2d9241|147539265|file|local|vector|||0.003||
+make_count_plot|function|f73d5b2e9314cdc5|||||||||||||||
+make_epigenetic_boxplots|function|ee4a2e71f73037ca|||||||||||||||
+make_expressed_scatterplot|function|2986a2937e494a74|||||||||||||||
+map_to_bed|function|90d321c2645c48a0|||||||||||||||
+merge_epigenetic_data|function|883ae2498c8fe68c|||||||||||||||
+merged_epigenetic_data|stem|06388b6cbe0d7edf|04d004149cdf7ad5|b0966b32cd1ca1d0|1313511385||t19439.5956241603s|1126feb9c5ee28fa|507440|rds|local|vector|||1.878||
+methylation_bed_file|stem|dc5f1434c83b71e0|88fb9c584cca2272|33ea1430dc62898f|1498034918|/home/jhgille2/cs590_2023/e11/data/Epigenetic_Data/B73_Chr1_MethylationWindows.bed|t19439.5955475399s|3b38cbf5be454b93|16458169|file|local|vector|||0.163||
+methylation_CG_mapped|stem|5921645ac16cff84|540d24e2ec398f40|615ee5314d8b041c|-1061351956|/home/jhgille2/cs590_2023/e11/B73_Mapped_Methyl_CG.tsv|t19439.5955907112s|338c25b8ef109871|12093947|file|local|vector|||0.362||
+methylation_CHG_mapped|stem|656373567dd05d95|02b089fc5509d42a|615ee5314d8b041c|-220340165|/home/jhgille2/cs590_2023/e11/B73_Mapped_Methyl_CHG.tsv|t19439.5955864288s|056e7e27d7a5b90f|12094204|file|local|vector|||0.414||
+methylation_CHH_mapped|stem|b87c5b71edec9382|1e22a73af3374b76|615ee5314d8b041c|550479384|/home/jhgille2/cs590_2023/e11/B73_Mapped_Methyl_CHH.tsv|t19439.5955780955s|32a711a1953b242e|12095272|file|local|vector|||0.327||
+replace_methyl_chr_name|function|7d959069a3256989|||||||||||||||
+rna_seq_data|stem|bfffcb234cb45c62|ee58ba034c91ddb9|ac38ef020f561561|-1513962135||t19439.5955650168s|bcfafc8b1e6d2c3f|2037345|rds|local|vector|||0.618||
+rna_seq_file|stem|561a9374de9c428e|0c396787ad1f6fd1|c3b5fc02cdc369c1|-307311483|/home/jhgille2/cs590_2023/e11/data/Epigenetic_Data/B73_RNAseq_Data_WGS.csv|t19436.228587963s|dee6a2e09937bec1|7156863|file|local|vector|||0.002||
+sort_annotations|function|6885492b570ee49f|||||||||||||||
+sorted_annotations|stem|785d02fec2fb7672|57977856ef46ffd9|b9e9cc09b2ed63ed|624053471|/home/jhgille2/cs590_2023/e11/ZmB73_WGS_GenesOnly_Sorted.gff3|t19439.5955720769s|4a89e7094c4daac1|11850018|file|local|vector|||0.617||
+split_epigenetic_data|function|191865551c9c657d|||||||||||||||
