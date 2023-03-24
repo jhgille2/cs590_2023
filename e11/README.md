@@ -9,6 +9,7 @@ cd ./cs590_2023/e11
 # Download micromamba
 curl micro.mamba.pm/install.sh | bash
 
+# Set up conda
 sudo chown -R $USER:mlocate /shared/conda/envs/bioinfo/
 source load_conda
 conda activate bioinfo
@@ -20,11 +21,14 @@ bash download_data.sh
 
 # Open R console
 R
+```
 
-# Load R packages (in R console)
-source("./packages.R)
+And then in the R console, run
+```
+# Load packages
+source("./packages.R")
 
-# Run the pipeline
+# Run pipeline
 tar_make()
 ```
 
