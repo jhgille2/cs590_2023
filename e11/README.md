@@ -8,10 +8,10 @@ cd ./cs590_2023/e11
 
 sudo chown -R $USER:mlocate /shared/conda/envs/bioinfo/
 source load_conda
+conda activate bioinfo
 
 # Set up environment for the exercize
-conda env create -f ./environment.yml 
-conda activate e11
+conda install ./environment.yml
 bash download_data.sh
 
 # Open R console
