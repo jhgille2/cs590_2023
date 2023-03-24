@@ -30,6 +30,6 @@ tar_make()
 
 Then (within the R session), individual targets can be loaded by running `tar_load(target name)`. E.g. to look at the `cntsMax` target, you would run `tar_load(cntsMax)` to load it into the R environment, and then `cntsMax` to print the object.
 
-The R session can be eisted with `q()` and the output inspected/transferred as usual from the VCL.  
+The R session can be exited with `q()` and the output inspected/transferred as usual from the VCL.  
 
  The main outputs from the pipeline are in the `plots` directory. other important files are output to the main directory as the pipeline runs as defined in `_targets.R`
