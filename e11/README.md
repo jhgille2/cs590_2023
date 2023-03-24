@@ -16,7 +16,7 @@ conda activate bioinfo
 conda config --add channels conda-forge
 
 # Set up environment for the exercize
-$HOME/bin/micromamba install --file requirements.txt
+$HOME/.local/bin/micromamba install --file requirements.txt
 bash download_data.sh
 
 # Open R console
