@@ -1,6 +1,6 @@
 # Exercize 11
 
-To run this workflow in the vcl, run 
+To run this workflow in the vcl, run this in the terminal
 
 ```
 git clone https://github.com/jhgille2/cs590_2023.git
