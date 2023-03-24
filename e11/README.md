@@ -29,3 +29,5 @@ tar_make()
 ```
 
 Then (within the R session), individual targets can be loaded by running `tar_load(target name)`. E.g. to look at the `cntsMax` target, you would run `tar_load(cntsMax)` to load it into the R environment, and then `cntsMax` to print the object.
+
+ The main outputs from the pipeline are in the `plots` directory. other important files are output to the main directory as the pipeline runs as defined in `_targets.R`
