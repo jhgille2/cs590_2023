@@ -12,3 +12,9 @@ wget https://ftp.maizegdb.org/MaizeGDB/FTP/B73_RefGen_v2/ZmB73_5a.59_WGS.gff3.gz
 
 # unzip this file
 gunzip ./ZmB73_5a.59_WGS.gff3.gz
+
+cd ..
+
+mkdir code
+cd ./code
+git clone https://github.com/billzt/gff3sort.git
